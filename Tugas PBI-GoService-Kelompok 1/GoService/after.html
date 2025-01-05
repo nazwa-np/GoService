@@ -1,0 +1,129 @@
+<html>
+ <head>
+    <title>Success Pay</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #ffffff;
+        }
+        .container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header i {
+            font-size: 24px;
+        }
+        .icon {
+            width: 50px;
+            height: 50px;
+            background-color: #e0e0e0;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 10px;
+        }
+        .icon i {
+            font-size: 24px;
+            color: #ffffff;
+        }
+        .amount {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .recipient {
+            font-size: 14px;
+            color: #666666;
+            margin-bottom: 20px;
+        }
+        .image-container {
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+        .description {
+            font-size: 14px;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+        .activate-button {
+            background-color: #00b14f;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .next-button {
+            background-color: #00b14f;
+            color: #ffffff;
+            border: none;
+            padding: 10px 0;
+            width: 20%;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 5px;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="header">
+    <i class="fas fa-times">
+    </i>
+    <i class="fas fa-question-circle">
+    </i>
+   </div>
+   <div class="icon">
+    <i class="fas fa-user">
+    </i>
+   </div>
+   <div class="amount">
+    Rp78.000
+   </div>
+   <div class="recipient">
+    Berhasil bayar ke
+    <strong>
+     Rahmadi Ismail
+    </strong>
+   </div>
+   <i class="fas fa-arrow-down">
+   </i>
+   <div class="image-container">
+   <img src="icon/Group 99.svg" height="200" >
+   </div>
+  <button class="next-button" onclick="window.location.href='rating.html'">
+   Next
+  </button>
+ </body>
+</html>

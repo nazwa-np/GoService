@@ -1,0 +1,263 @@
+<div class="page-wrapper">
+    <div class="technician-search">
+        <div class="search-container">
+            <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/44a600a70857b6dbc4bfe368f2b67bba0a55040b8b1200acc63e0d2996f7cb51?placeholderIfAbsent=true&apiKey=a00ee8f8e521438eacc418366074cc10"
+                class="background-image"
+                alt="Background"
+            />
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="icon-column">
+                    <img
+                        loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/407be32228f0d13ae31b2fc38c92cbba245e32625af085cc365dc0a96dd2079d?placeholderIfAbsent=true&apiKey=a00ee8f8e521438eacc418366074cc10"
+                        class="footer-icon"
+                        alt="Technician search icon"
+                    />
+                </div>
+                <div class="text-column">
+                    <h1 class="footer-heading">Mencari Teknisi Terdekat</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Timer Redirect Script -->
+<script>
+    setTimeout(function() {
+        window.location.href = "dapat_teknisi.html"; // Redirect after 5 seconds
+    }, 5000); // 5000 milliseconds = 5 seconds
+</script>
+
+<style>
+    .page-wrapper {
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f5f5f5;
+    }
+
+    .technician-search {
+        border-radius: 30px;
+        background-color: #fff;
+        display: flex;
+        width: 100%;
+        max-width: 720px;
+        flex-direction: column;
+        overflow: hidden;
+        margin: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .search-container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        min-height: 1127px;
+        width: 100%;
+        font-family: Rubik, sans-serif;
+        color: var(--abu-text, #646363);
+        font-weight: 500;
+        padding: 43px 30px 163px;
+    }
+
+    .background-image {
+        position: absolute;
+        inset: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .location-bar {
+        position: relative;
+        border-radius: 32px;
+        background: var(--putih, #fff);
+        display: flex;
+        width: 100%;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 8px 27px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .location-wrapper {
+        display: flex;
+        gap: 14px;
+        font-size: 20px;
+        align-items: center;
+    }
+
+    .location-icon {
+        aspect-ratio: 0.85;
+        object-fit: contain;
+        object-position: center;
+        width: 34px;
+        fill: var(--Colors-Red, #ff3b30);
+    }
+
+    .location-text {
+        margin: 0;
+    }
+
+    .add-button {
+        border-radius: 40px;
+        border: 2px solid var(--abu, #bdbdbd);
+        background: var(--putih, #fff);
+        display: flex;
+        gap: 11px;
+        font-size: 16px;
+        padding: 11px 16px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        align-items: center;
+    }
+
+    .add-button:hover {
+        background-color: #f5f5f5;
+    }
+
+    .add-button:focus {
+        outline: 2px solid #0066cc;
+        outline-offset: 2px;
+    }
+
+    .add-icon {
+        aspect-ratio: 1.07;
+        object-fit: contain;
+        object-position: center;
+        width: 16px;
+        margin: 0;
+    }
+
+    .progress-indicator {
+        position: relative;
+        border-radius: 90px;
+        background: var(--abu, #bdbdbd);
+        align-self: center;
+        display: flex;
+        width: 83px;
+        height: 8px;
+        margin: 855px 0 -33px 11px;
+    }
+
+    .footer {
+        border-radius: 24px 24px 0 0;
+        background-color: rgb(0, 136, 12);
+        box-shadow: 4px 4px 5px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 8px;
+        width: 100%;
+        padding: 93px 30px;
+    }
+
+    .footer-content {
+        gap: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .icon-column {
+        display: flex;
+        flex-direction: column;
+        line-height: normal;
+        width: 19%;
+        margin-left: 0;
+    }
+
+    .footer-icon {
+        aspect-ratio: 1.2;
+        object-fit: contain;
+        object-position: center;
+        width: 124px;
+        max-width: 100%;
+        flex-grow: 1;
+    }
+
+    .text-column {
+        display: flex;
+        flex-direction: column;
+        line-height: normal;
+        width: 81%;
+        margin-left: 20px;
+    }
+
+    .footer-heading {
+        color: #fff;
+        align-self: stretch;
+        margin: 0;
+        font: 700 36px Rubik, sans-serif;
+    }
+
+    @media (max-width: 991px) {
+        .technician-search {
+            margin: 10px;
+        }
+
+        .search-container {
+            max-width: 100%;
+            padding: 20px;
+        }
+        
+        .location-bar {
+            max-width: 100%;
+            padding: 8px 20px;
+        }
+        
+        .progress-indicator {
+            margin: 40px 0 10px;
+        }
+        
+        .footer {
+            max-width: 100%;
+            padding: 40px 20px;
+        }
+        
+        .footer-content {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+        }
+        
+        .icon-column {
+            width: 100%;
+            align-items: center;
+        }
+        
+        .footer-icon {
+            margin-top: 0;
+            width: 100px;
+        }
+        
+        .text-column {
+            width: 100%;
+            margin-left: 0;
+            align-items: center;
+        }
+        
+        .footer-heading {
+            font-size: 28px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .location-bar {
+            flex-direction: column;
+            align-items: stretch;
+            gap: 10px;
+        }
+
+        .add-button {
+            justify-content: center;
+        }
+    }
+</style>

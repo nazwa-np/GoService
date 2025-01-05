@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Service Selection</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #008000;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            max-width: 90%;
+        }
+        .container img {
+            width: 50%;
+            max-width: 150px;
+            height: auto;
+        }
+        .description {
+            margin-top: 20px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .pagination {
+            margin-top: 20px;
+        }
+        .pagination .dot {
+            height: 10px;
+            width: 10px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .pagination .dot.active {
+            background-color: #000;
+        }
+    </style>
+    <script>
+        // Timer function to redirect to selesai_service.html after 5 seconds
+        setTimeout(function() {
+            window.location.href = "selesai_service.html";
+        }, 5000);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img src="icon/image 16.svg" alt="Illustration of a computer with a wrench and a smartphone with an exclamation mark"/>
+        <div class="description">
+            Teknisi sedang memperbaiki perangkat Anda. Harap tunggu, proses ini mungkin memakan waktu 
+            beberapa saat.
+        </div>
+    </div>
+</body>
+</html>

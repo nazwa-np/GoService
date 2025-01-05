@@ -1,0 +1,197 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   GoService
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header {
+            background-color: #00A651;
+            color: white;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header .location {
+            display: flex;
+            align-items: center;
+        }
+        .header .location i {
+            margin-right: 5px;
+        }
+        .header .close-btn {
+            font-size: 24px;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            padding: 10px;
+            border-radius: 25px;
+            margin: 10px;
+        }
+        .search-bar input {
+            border: none;
+            outline: none;
+            flex: 1;
+            padding: 5px;
+        }
+        .search-bar i {
+            margin-left: 10px;
+        }
+        .content {
+            text-align: center;
+            padding: 20px;
+        }
+        .content h1 {
+            font-size: 18px;
+            font-weight: 500;
+            margin: 20px 0;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .service-item {
+            width: 30%;
+            margin: 10px;
+            text-align: center;
+        }
+        .service-item img {
+            width: 100%;
+            max-width: 60px;
+            margin-bottom: 10px;
+        }
+        .service-item p {
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+        }
+        .footer .footer-item {
+            text-align: center;
+        }
+        .footer .footer-item i {
+            font-size: 20px;
+        }
+        .footer .footer-item p {
+            font-size: 12px;
+            margin: 5px 0 0;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="header">
+   <i class="fas fa-times close-btn">
+   </i>
+   <div class="location">
+    <i class="fas fa-map-marker-alt">
+    </i>
+    <span>
+     Jakarta
+    </span>
+   </div>
+  </div>
+  <div class="content">
+   <img alt="Illustration of a computer with a gear icon" height="100" src="https://storage.googleapis.com/a1aa/image/dZExOPzvVLKoERReDemOIdA7pqVch8genokwVTEq8fkHhrGQB.jpg" width="100"/>
+   <h1>
+    Solusi Mudah untuk Elektronik Anda
+   </h1>
+   <div class="search-bar">
+    <i class="fas fa-search">
+    </i>
+    <input placeholder="Temukan Layanan" type="text"/>
+   </div>
+   <h2>
+    Explore new ways with GoService
+   </h2>
+   <div class="services">
+    <div class="service-item">
+        <a href="pemesanan.html?service=Televisi">
+            <img alt="Icon of a television" height="60" src="./Img/televisi.png" width="60"/>
+        </a>
+        <p>Televisi</p>
+    </div>
+    <div class="service-item">
+        <a href="pemesanan.html?service=Pendingin Ruangan">
+            <img alt="Icon of an air conditioner" height="60" src="./Img/pendingin.png" width="60"/>
+        </a>
+        <p>Pendingin Ruangan</p>
+    </div>
+    <div class="service-item">
+        <a href="pemesanan.html?service=Mesin Cuci">
+            <img alt="Icon of a washing machine" height="60" src="./Img/mesincuci.png" width="60"/>
+        </a>
+        <p>Mesin Cuci</p>
+    </div>
+    <div class="service-item">
+        <a href="pemesanan.html?service=Smartphone dan Tablet">
+            <img alt="Icon of a smartphone and tablet" height="60" src="./Img/hp.png" width="60"/>
+        </a>
+        <p>Smartphone dan Tablet</p>
+    </div>
+    <div class="service-item">
+        <a href="pemesanan.html?service=Komputer dan Laptop">
+            <img alt="Icon of a computer and laptop" height="60" src="./Img/computer.png" width="60"/>
+        </a>
+        <p>Komputer dan Laptop</p>
+    </div>
+    <div class="service-item">
+     <img alt="Icon of four squares representing other services" height="60" src="./Img/lainnya.png" width="60"/>
+     <p>
+      Lainnya
+     </p>
+    </div>
+   </div>
+  </div>
+  <div class="footer">
+   <div class="footer-item">
+    <i class="fas fa-home">
+    </i>
+    <p>
+     Explore
+    </p>
+   </div>
+   <div class="footer-item">
+    <i class="fas fa-search">
+    </i>
+    <p>
+     Search
+    </p>
+   </div>
+   <div class="footer-item">
+    <i class="fas fa-tags">
+    </i>
+    <p>
+     Promos
+    </p>
+   </div>
+   <div class="footer-item">
+    <i class="fas fa-history" onclick="window.location.href='history.html'" style="cursor: pointer;">
+    </i>
+    <p>
+     History
+    </p>
+   </div>
+  </div>
+ </body>
+</html>

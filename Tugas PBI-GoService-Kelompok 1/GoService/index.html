@@ -1,0 +1,147 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Gojek Welcome Page
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fff;
+        }
+        .container {
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+        .header img {
+            height: 24px;
+        }
+        .header .language {
+            background-color: #FF0000;
+            color: #fff;
+            border-radius: 50%;
+            padding: 5px 10px;
+            font-size: 12px;
+        }
+        .main-image {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .welcome-text {
+            font-weight: 700;
+            font-size: 20px;
+            margin: 20px 0 10px;
+        }
+        .description {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .dots {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .dots span {
+            height: 8px;
+            width: 8px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 2px;
+        }
+        .dots .active {
+            background-color: #4CAF50;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border-radius: 25px;
+            border: none;
+            font-size: 16px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .button-primary {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+        .button-secondary {
+            background-color: #fff;
+            color: #4CAF50;
+            border: 2px solid #4CAF50;
+        }
+        .footer {
+            font-size: 12px;
+            color: #666;
+        }
+        .footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="header">
+    <img alt="Gojek logo" height="24" src="https://storage.googleapis.com/a1aa/image/soepxUv20ek4l0fKD4P73GeIN0TeQxxMEc8D92if5YI4X1aAF.jpg" width="50"/>
+    <div class="language">
+     IND
+    </div>
+   </div>
+   <img alt="Illustration of Gojek services" class="main-image" height="200" src="./Img/login.png" width="400"/>
+   <div class="welcome-text">
+    Selamat datang di gojek!
+   </div>
+   <div class="description">
+    Aplikasi yang bikin hidupmu lebih nyaman. Siap bantuin semua kebutuhan mu, kapanpun, dan di manapun
+   </div>
+   <div class="dots">
+    <span class="active">
+    </span>
+    <span>
+    </span>
+    <span>
+    </span>
+    <span>
+    </span>
+    <span>
+    </span>
+   </div>
+   <button class="button button-primary" onclick="window.location.href='login.html'">
+    Masuk
+   </button>
+   <button class="button button-secondary">
+    Belum ada akun?, Daftar dulu
+   </button>
+   <div class="footer">
+    Dengan masuk atau mendaftar, kamu menyetujui
+    <a href="#">
+     Ketentuan layanan
+    </a>
+    dan
+    <a href="#">
+     Kebijakan privasi
+    </a>
+    .
+   </div>
+  </div>
+ </body>
+</html>

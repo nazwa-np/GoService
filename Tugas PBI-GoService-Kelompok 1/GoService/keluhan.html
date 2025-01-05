@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Keluhan</title>
+    <meta http-equiv="refresh" content="5;url=after.html">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            padding: 20px;
+        }
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .content {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .keyboard {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .keyboard .input-area {
+            flex-grow: 1;
+            margin: 0 10px;
+        }
+        .keyboard .input-area input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+        }
+        .keyboard .save-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .keyboard .save-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Detail Keluhan</div>
+        <div class="content">
+           Masukan detail keluhan pada bagian ini.
+        </div>
+    </div>
+    <div class="keyboard">
+        <div class="input-area">
+            <input type="text" placeholder="Type a message...">
+        </div>
+        <!-- Onclick event to redirect to pemesanan.html -->
+        <button class="save-btn" onclick="window.history.back();">Simpan</button>
+    </div>
+</body>
+</html>
+

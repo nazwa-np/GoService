@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Metode Pembayaran</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+      padding: 20px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      border-bottom: 1px solid #ddd;
+    }
+    .payment-method {
+      display: flex;
+      align-items: center;
+      padding: 15px 20px;
+      border-bottom: 1px solid #ddd;
+      text-decoration: none;
+      color: #000;
+      cursor: pointer;
+    }
+    .payment-method img {
+      width: 30px;
+      height: 30px;
+      margin-right: 20px;
+    }
+    .payment-method .text {
+      flex-grow: 1;
+      font-size: 16px;
+    }
+    .payment-method .icon {
+      font-size: 18px;
+      color: #888;
+    }
+    .payment-details {
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      border-top: 1px solid #ddd;
+    }
+    .button-oke {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      text-align: center;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    .button-oke:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      Metode Pembayaran
+    </div>
+    
+    <a class="payment-method" id="cash-method" onclick="updatePaymentMethod('Cash')">
+      <img alt="Cash icon" height="30" src="./Img/cash.png" width="30"/>
+      <div class="text">
+        Cash
+      </div>
+      <div class="icon">
+        <i class="fas fa-chevron-right"></i>
+      </div>
+    </a>
+    
+    <a class="payment-method" id="gopay-method" onclick="updatePaymentMethod('GoPay')">
+      <img alt="GoPay icon" height="30" src="./Img/gopay.png" width="30"/>
+      <div class="text">
+        GoPay
+      </div>
+      <div class="icon">
+        <i class="fas fa-chevron-right"></i>
+      </div>
+    </a>
+    
+    <a class="payment-method" id="credit-method" onclick="updatePaymentMethod('Credit/Debit')">
+      <img alt="Credit or Debit icon" height="30" src="./Img/credit.png" width="30"/>
+      <div class="text">
+        Credit or Debit
+      </div>
+      <div class="icon">
+        <i class="fas fa-chevron-right"></i>
+      </div>
+    </a>
+    
+    <a class="payment-method" id="linkaja-method" onclick="updatePaymentMethod('LinkAja')">
+      <img alt="LinkAja icon" height="30" src="./Img/linkaja.png" width="30"/>
+      <div class="text">
+        LinkAja
+      </div>
+      <div class="icon">
+        <i class="fas fa-chevron-right"></i>
+      </div>
+    </a>
+
+    <div class="payment-details" id="payment-details">
+      <!-- Payment method details will be displayed here -->
+    </div>
+
+    <!-- Oke Button -->
+    <button class="button-oke" onclick="goBack()">Oke</button>
+  </div>
+
+  <script>
+    function updatePaymentMethod(method) {
+      let paymentDetailsText = '';
+
+      if (method === 'Cash') {
+        paymentDetailsText = 'You have selected Cash as your payment method.';
+      } else if (method === 'GoPay') {
+        paymentDetailsText = 'You have selected GoPay as your payment method.';
+      } else if (method === 'Credit/Debit') {
+        paymentDetailsText = 'You have selected Credit/Debit card as your payment method.';
+      } else if (method === 'LinkAja') {
+        paymentDetailsText = 'You have selected LinkAja as your payment method.';
+      }
+
+      // Update the payment details section
+      document.getElementById('payment-details').textContent = paymentDetailsText;
+    }
+
+    // Function to go back to the previous page
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</body>
+</html>

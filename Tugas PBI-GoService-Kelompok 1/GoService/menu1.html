@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Service Selection</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #008000;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            max-width: 90%;
+        }
+        .container img {
+            width: 50%;
+            max-width: 150px;
+            height: auto;
+        }
+        .description {
+            margin-top: 20px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .pagination {
+            margin-top: 20px;
+        }
+        .pagination .dot {
+            height: 10px;
+            width: 10px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .pagination .dot.active {
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./Img/menu1.png" alt="Illustration of a computer with a wrench and a smartphone with an exclamation mark" id="pageImage"/>
+        <div class="description" id="pageDescription">
+            Pilih layanan sesuai kebutuhan Anda, seperti perbaikan elektronik rumah tangga atau perangkat elektronik lainnya.
+        </div>
+        <div class="pagination">
+            <span class="dot active" onclick="changePage(0)"></span>
+            <span class="dot" onclick="changePage(1)"></span>
+            <span class="dot" onclick="changePage(2)"></span>
+        </div>
+    </div>
+
+    <script>
+        const pages = [
+            {
+                image: "./Img/menu1.png",
+                description: "Pilih layanan sesuai kebutuhan Anda, seperti perbaikan elektronik rumah tangga atau perangkat elektronik lainnya."
+            },
+            {
+                image: "./Img/menu3.png",
+                description: "Masukkan detail pemesanan seperti lokasi, waktu, dan preferensi layanan."
+            },
+            {
+                image: "./Img/menu2.png",
+                description: "Pantau teknisi Anda melalui fitur pelacakan real-time"
+            }
+        ];
+
+        function changePage(index) {
+            const pageImage = document.getElementById('pageImage');
+            const pageDescription = document.getElementById('pageDescription');
+            const dots = document.querySelectorAll('.pagination .dot');
+
+            pageImage.src = pages[index].image;
+            pageDescription.textContent = pages[index].description;
+
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[index].classList.add('active');
+
+            if (index === 2) {
+                setTimeout(() => {
+                    window.location.href = "fitur.html";
+                }, 3000);
+            }
+        }
+    </script>
+</body>
+</html>

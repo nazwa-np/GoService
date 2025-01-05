@@ -1,0 +1,235 @@
+<html>
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Login
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #fff;
+        }
+        .container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            height: 24px;
+            margin-right: 10px;
+        }
+        .header i {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        .header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .login-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .login-subtitle {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group .phone-input {
+            display: flex;
+            align-items: center;
+        }
+        .form-group .phone-input input {
+            flex: 1;
+            border: none;
+            outline: none;
+        }
+        .form-group .phone-input .country-code {
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-right: 1px solid #ccc;
+        }
+        .form-group .phone-input .clear-icon {
+            padding: 10px;
+            cursor: pointer;
+        }
+        .issue-link {
+            color: #00a000;
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 20px;
+            display: block;
+        }
+        .continue-button {
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #00a000;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .keyboard {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .keyboard button {
+            width: 30%;
+            padding: 20px;
+            font-size: 18px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f0f0f0;
+            cursor: pointer;
+        }
+        .keyboard .zero-button {
+            width: 65%;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="header">
+    <i class="fas fa-arrow-left">
+    </i>
+    <img alt="Gojek logo" height="24" src="https://storage.googleapis.com/a1aa/image/w3KDlPLheGyTUaIle6FDrEvYKTgqPkXApKixiJjNKvflZWDoA.jpg" width="24"/>
+   </div>
+   <div class="login-title">
+    Login
+   </div>
+   <div class="login-subtitle">
+    Enter your registered phone number to log in
+   </div>
+   <div class="form-group">
+    <label for="phone-number">
+     Phone number
+     <span style="color: red;">
+      *
+     </span>
+    </label>
+    <div class="phone-input">
+     <div class="country-code">
+      +62
+     </div>
+     <input id="phone-number" type="text" value="87786642031"/>
+     <div class="clear-icon">
+      <i class="fas fa-times">
+      </i>
+     </div>
+    </div>
+   </div>
+   <a class="issue-link" href="#">
+    Issue with number?
+   </a>
+   <button class="continue-button" onclick="window.location.href='gojekhome.html'">
+    Continue
+   </button>
+   <div class="keyboard">
+    <button>
+     1
+     <br/>
+     <small>
+      GHI
+     </small>
+    </button>
+    <button>
+     2
+     <br/>
+     <small>
+      ABC
+     </small>
+    </button>
+    <button>
+     3
+     <br/>
+     <small>
+      DEF
+     </small>
+    </button>
+    <button>
+     4
+     <br/>
+     <small>
+      GHI
+     </small>
+    </button>
+    <button>
+     5
+     <br/>
+     <small>
+      JKL
+     </small>
+    </button>
+    <button>
+     6
+     <br/>
+     <small>
+      MNO
+     </small>
+    </button>
+    <button>
+     7
+     <br/>
+     <small>
+      PQRS
+     </small>
+    </button>
+    <button>
+     8
+     <br/>
+     <small>
+      TUV
+     </small>
+    </button>
+    <button>
+     9
+     <br/>
+     <small>
+      WXYZ
+     </small>
+    </button>
+    <button class="zero-button">
+     0
+    </button>
+    <button>
+     <i class="fas fa-times">
+     </i>
+    </button>
+   </div>
+  </div>
+ </body>
+</html>
